@@ -1,0 +1,33 @@
+{
+    "name": "flowaxy/cookie",
+    "description": "The Flowaxy cookie.",
+    "type": "library",
+    "keywords": [
+        "flowaxy",
+        "helpers",
+        "session"
+    ],
+    "license": "MIT",
+    "homepage": "https://flowaxy.com",
+    "support": {
+        "issues": "https://github.com/flowaxy/cookie/issues",
+        "source": "https://github.com/flowaxy/cookie"
+    },
+    "authors": [
+        {
+            "name": "Mykola Dovhopol",
+            "email": "flowaxy.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flowaxy\\": "src/"
+        }
+    },
+    "require-dev": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
