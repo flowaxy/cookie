@@ -41,3 +41,15 @@ class Cookie
         $expire = time() + (60 * 60 * 24 * $daysToExpire);
         setcookie($key, $value, $expire, "/");
     }
+
+    /**
+     * Removes a cookie by setting its expiration date in the past.
+     *
+     * @param string $key The name of the cookie to remove.
+     */
+
+    public static function remove(string $key): void
+    {
+        unset($_COOKIE[$key]);
+        setcookie($key, '', time() - 3600, "/");
+    }
