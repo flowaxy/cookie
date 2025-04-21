@@ -26,4 +26,18 @@ class Cookie
         return $_COOKIE[$key] ?? false;
     }
 
-}
+    /**
+     * Sets a cookie with the given key and value.
+     *
+     * @param string $key The name of the cookie.
+     * @param string $value The value to store in the cookie.
+     * @param int $daysToExpire Number of days until the cookie expires. Default is 30 days.
+     * 
+     * If set to 0, the cookie will expire at the end of the browser session.
+     */
+
+    public static function set(string $key, string $value, int $daysToExpire = 30): void
+    {
+        $expire = time() + (60 * 60 * 24 * $daysToExpire);
+        setcookie($key, $value, $expire, "/");
+    }
