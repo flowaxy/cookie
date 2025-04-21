@@ -53,3 +53,16 @@ class Cookie
         unset($_COOKIE[$key]);
         setcookie($key, '', time() - 3600, "/");
     }
+
+    /**
+     * Checks whether a cookie is empty or not set.
+     *
+     * @param string $key The name of the cookie to check.
+     * @return bool True if the cookie is not set or its value is empty, false otherwise.
+     */
+    
+    public static function isEmpty(string $key): bool
+    {
+        return empty($_COOKIE[$key]);
+    }
+}
