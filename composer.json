@@ -1,6 +1,6 @@
 {
     "name": "flowaxy/cookie",
-    "description": "The Flowaxy cookie.",
+    "description": "Lightweight PHP library for working with HTTP cookies. Ideal for use in CMS Flowaxy, landing pages, and any web projects.",
     "type": "library",
     "keywords": [
         "flowaxy",
